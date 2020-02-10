@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebDen</title>
+  </head>
+  <body>
+    <div id="offcanvas" uk-offcanvas>
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+      </div>
+    </div>
+
+    <nav class="container--fluid">
+      <div class="container nav">
+        <div class="logo--wrp">
+          <a href="#" class="logo-link">
+            <img src="./images/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <button uk-toggle="target: #offcanvas" type="button">
+          <span uk-icon="icon: menu"></span>
+        </button>
+      </div>
+    </nav>
+
+    <header class="container--fluid">
+      <div class="container">
+        <h1 class="title">
+          DEVELOPMENT AND PROMOTION By
+          <a href="" target="_blank">
+            WEBDEN.STUDIO
+          </a>
+        </h1>
+
+        <form class="form">
+          <label>
+            <input type="text" placeholder="Создать сайт..." />
+            <span uk-icon="icon: search"></span>
+          </label>
+          <input type="submit" value="Заказать сайт" />
+        </form>
+
+        <span class="read-next">Листай дальше</span>
+      </div>
+    </header>
+
+    <main class="container--fluid">
+      <div class="contaoiner">
+        <ul class="list">
+          <li class="list__item uk-active">
+            <a href="#" data-page="1"> 01 - Адоптивный дизайн</a>
+          </li>
+          <li class="list__item">
+            <a href="#" data-page="2"> 02 - Внутрення SEO оптимизация</a>
+          </li>
+          <li class="list__item">
+            <a href="#" data-page="3"> 03 - Инструменнты маркетинга</a>
+          </li>
+          <li class="list__item">
+            <a href="#" data-page="4"> 04 - Заботливая тех поддержка</a>
+          </li>
+        </ul>
+
+        <div class="card-box">
+          <div class="card">
+            <div class="control">
+              <button class="prev"></button> 01/04
+              <button class="next"></button>
+            </div>
+            <div class="icon"></div>
+            <h3 class="card__title">Адаптивный дизайн</h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores corporis a deserunt dolores amet ipsa quidem commodi
+              laboriosam ipsam nobis eaque expedita veritatis dolor quam itaque,
+              corrupti quasi laudantium totam veniam modi impedit pariatur sunt?
+              Consequuntur, eos. Vero sint ducimus consectetur expedita nemo
+              voluptatem non voluptates officiis ut doloribus.
+            </p>
+          </div>
+        </div>
+        <h2 class="contactAs">Связаться с нами</h2>
+        <form class="contactForm">
+          <input type="text" name="name" />
+          <input type="text" name="email" />
+          <input type="text" name="message" />
+          <input type="submit" />
+        </form>
+      </div>
+    </main>
+
+    <div class="container--fluid">
+      <div class="container contact">
+        <h2 class="contact__title">Контакты</h2>
+        <div class="card-box">
+          <div class="card">
+            <h3 class="card__title">e-mail:</h3>
+            <a href="mailto:info@webden.sudio">info@webden.sudio</a>
+          </div>
+          <div class="card">
+            <h3 card="card__title">телефон:</h3>
+            <a href="tel:0638639749">+38 063 863 97 49</a>
+          </div>
+          <div class="card">
+            <h3 card="card__title">наш скайп</h3>
+            <a href="skype:webden.studio">webden.studio</a>
+          </div>
+          <div class="card">
+            <h3 class="card__title">Социальные сети:</h3>
+            <a href="#" uk-icon="icon: heart"></a>
+            <a href="#" uk-icon="icon: heart"></a>
+            <a href="#" uk-icon="icon: heart"></a>
+            <a href="#" uk-icon="icon: heart"></a>
+            <a href="#" uk-icon="icon: heart"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
