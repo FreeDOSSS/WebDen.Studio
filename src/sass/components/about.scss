@@ -1,0 +1,41 @@
+@import "./variables.scss";
+
+.about {
+  padding: 50px 18px;
+
+  .title {
+    text-align: center;
+    @include font($fontPNr, 400, 24px);
+    text-transform: uppercase;
+    letter-spacing: 7.68px;
+    color: $colorWhite;
+    margin-bottom: 44px;
+  }
+
+  .list {
+    padding: 0;
+    list-style: none;
+    &__item {
+      margin-bottom: 19px;
+      &__link {
+        color: $colorWhite;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include font($fontPNr, 400, 14px);
+
+        .num {
+          @include font($fontPNr, 400, 28px);
+          line-height: 1;
+        }
+        .def {
+          width: 30px;
+          height: 2px;
+          display: block;
+          background-color: $colorWhite;
+          margin: 0 17px;
+        }
+      }
+    }
+  }
+}

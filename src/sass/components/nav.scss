@@ -1,0 +1,17 @@
+@import "./variables.scss";
+.nav {
+  padding-top: 30px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+
+  &--wrp {
+    margin-bottom: 80px;
+  }
+
+  .toggle-offcanvas {
+    border: none;
+    background: none;
+    color: $colorWhite;
+  }
+}

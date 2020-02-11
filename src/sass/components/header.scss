@@ -1,0 +1,107 @@
+@import "./variables.scss";
+
+.header {
+  padding-bottom: 63px;
+  &--wrp {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    text-align: center;
+    color: $colorWhite;
+    @include font($fontPNr, 400, 28px);
+    margin-bottom: 25px;
+    .link {
+      color: $colorAccent;
+    }
+  }
+
+  .form {
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding-top: 60px;
+    .label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: transparentize($colorWrp, 0.05);
+      z-index: 5;
+      border-radius: 8px;
+      filter: blur(1px);
+
+      &--wrp {
+        margin-top: 20px;
+        position: relative;
+        margin-bottom: 24px;
+
+        #query {
+          position: relative;
+          background: none;
+          width: 100%;
+          display: block;
+          padding: 15px 0 17px 26px;
+          border: none;
+          color: $colorWhite;
+          z-index: 20;
+          @include font($fontPNr, 400, 14px);
+        }
+
+        .icon {
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          z-index: 20;
+        }
+      }
+    }
+
+    .submit {
+      display: block;
+      padding: 16px 0;
+      width: 100%;
+      border-radius: 25px;
+      box-shadow: 0 11px 23px 1px rgba(35, 179, 254, 0.2);
+      background-color: $colorAccent;
+      border: none;
+      color: $colorWhite;
+      text-transform: uppercase;
+      @include font($fontPNr, 700, 18px);
+      letter-spacing: 0.98px;
+      margin-bottom: 50px;
+    }
+
+    .seeDown {
+      width: 2px;
+      display: block;
+      margin: auto;
+      margin-bottom: 25px;
+      height: 41px;
+      // background-color: #23b3fe;
+      animation: func 2s ease-in infinite;
+    }
+  }
+  .read-next {
+    @include font($fontPNr, 400, 18px);
+    color: $colorWhite;
+    text-align: center;
+  }
+}
+
+@keyframes func {
+  @for $i from 1 through 100 {
+    #{$i * 1%} {
+      background: linear-gradient(
+        to bottom,
+        #23b3fe $i * 1%,
+        #295f7c $i * 1%,
+        #295f7c
+      );
+    }
+  }
+}

@@ -1,1 +1,12 @@
 $colorAccent: #23b3fe;
+$colorWhite: #fff;
+$colorDark: #000;
+$colorWrp: #34383d;
+$fontPNt: "Proxima Nova Th";
+$fontPNr: "Proxima Nova Rg";
+
+@mixin font($name, $weight, $size) {
+  font-family: $name;
+  font-weight: $weight;
+  font-size: $size;
+}
